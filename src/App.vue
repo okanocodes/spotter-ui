@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -8,8 +8,11 @@ import {
   Title,
   Tooltip,
   Legend,
+  type ChartOptions,
 } from 'chart.js'
 import { Line } from 'vue-chartjs'
+
+// @ts-ignore
 import * as chartConfig from './chartConfig.js'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend)
