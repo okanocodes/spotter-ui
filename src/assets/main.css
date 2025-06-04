@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-dark-gray: #484946;
+  --color-primary-orange: #ff5e24;
+  --color-border-gray: #e4e5e1;
+}
+
+.custom-chart-tooltip {
+  background: #fdfdfd;
+  border-radius: 3px;
+  border: 1px solid #9c9c9c;
+  color: #9c9c9c;
+  font-size: 10px;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%, 0);
+  transition: all 0.1s ease;
+  padding: 0;
+}
+.custom-chart-tooltip table {
+  padding: 0;
+  margin: 0;
+}
+.custom-chart-tooltip th {
+  color: #9c9c9c;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  border-bottom-width: 1px;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+}
+
+.custom-chart-tooltip tr:first-child td {
+  padding-top: 10px;
+}
+.custom-chart-tooltip tr td {
+  padding-top: 5px;
+}
+.custom-chart-tooltip tr:last-child td {
+  padding-bottom: 5px;
+}
